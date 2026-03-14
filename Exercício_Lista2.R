@@ -8,8 +8,11 @@ S3 = read.csv("data_rats_S3.csv", sep = ";")
 S4 = read.csv("data_rats_S4.csv", sep = ";")
 S5 = read.csv("data_rats_S5.csv", sep = ";")
 
+<<<<<<< HEAD
 View(S1)
 
+=======
+>>>>>>> ad55e94ae1c3779566e777159d2799ac4f736c76
 #Removendo "início da sessão" (111) e "final da sessão dos datasets" (999)
 
 S1 = subset(S1, !(event %in% c("111","999")))
@@ -18,7 +21,11 @@ S3 = subset(S3, !(event %in% c("111","999")))
 S4 = subset(S4, !(event %in% c("111","999")))
 S5 = subset(S5, !(event %in% c("111","999")))
 
+<<<<<<< HEAD
 #Substituindo valores 200 por 0 e valores 400 por 1 e transformando centisegundos em segundos
+=======
+#Substituindo valores 200 por 0 e valores 400 por 1 e transformando centisegundos em milissegundos
+>>>>>>> ad55e94ae1c3779566e777159d2799ac4f736c76
 
 datasets = list(S1, S2, S3, S4, S5)
 
